@@ -139,6 +139,16 @@ ul {
   top: 51%;
 }
 
+
+.mountain-quote .small{
+  display: none;
+  font-size: 14px;
+ 
+}
+.mountain-quote .large{
+  display: block;
+}
+
 #mountain-quote {
   margin: 0 auto;
   width: 600px;
@@ -173,7 +183,12 @@ ul {
   }
 }
 @media (max-width: 576px) {
-
+  .mountain-quote .small{
+    display: block;
+  }
+  .mountain-quote .large{
+    display: none;
+  }
   .mountain-wrapper{
     height: 47vh;
     min-height: 0;
@@ -190,7 +205,8 @@ ul {
     display: none;
   }
   #mountain-quote{
-    top: 47%;
+    top: 40%;
+    padding: 0px 20px;
   }
 }
 
