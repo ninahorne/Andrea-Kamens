@@ -61,6 +61,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var mountainWrapper = document.querySelector(".mountain-wrapper");
 
   var mountainQuote = document.querySelector(".mountain-quote");
+  var siteTitle = document.querySelector(".site-title");
+  var arrow = document.querySelector(".arrow");
+  var scrollDown = document.querySelector(".scroll_down");
   let screenWidth = window.innerWidth;
   let screenHeight = window.innerHeight;
   let ratio = screenWidth / screenHeight;
@@ -80,6 +83,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     if (mountainWrapper && screenWidth > 576) {
       mountainWrapper.style.height = "60vh";
+    }
+  }
+  if (ratio < 0.5 && screenWidth < 576) {
+    if (mountains) {
+      mountains.style.height = "47vh";
+      mountains.style.top = "0";
+    }
+    if (mountainWrapper && screenWidth < 576) {
+      mountainWrapper.style.height = "47vh";
+      mountainWrapper.style.minHeight = "0";
+      siteTitle.style.top = "38%";
+      arrow.style.display = "none";
+      scrollDown.style.display = "none";
+      mountainQuote.style.top = "47%"
+
     }
   }
 });
