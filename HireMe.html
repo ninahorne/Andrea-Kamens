@@ -75,7 +75,7 @@
         </li>
 
         <li class="menu-item">
-          <a class="menu-link" href="HireMe.html"> Create Your Program  </a>
+          <a class="menu-link" href="HireMe.html"> Create Your Program </a>
         </li>
 
         <li class="menu-item">
@@ -102,184 +102,222 @@
       <!--PAGE TITLE ====================================================================-->
 
       <section class="page-title">
-        <h2> Create Your Program</h2>
+        <h2>Create Your Program</h2>
       </section>
-    </div>
-
-    <div class="container">
-      <div class="form-background">
-          <img src="./images/Hire_Me_Form-09.svg" alt="" class="form-image">
-        <p class="form-copy">
-          Hello! If you would like to hire me please send me an email and I’ll
-          get back to you as soon as I can! Tick the boxes below and in your email let me know the rough timeline.
-
-        <form id="mailForm" action="javascript:sendMail()" method="POST" enctype="text/plain">
-          <div class="form-wrapper">
-            <h6>What would you like to contact me about?</h6>
-            <div class="row">
-              <div class="col-6">
-                <div>
-                  <input type="checkbox" name="reason" value="Kids" id="Kids" />
-      
-                  <label for="Kids"> Kids
-                  </label>
-                </div>
-                <div>
-                  <input type="checkbox" value="email" name="Adults" id="Adults" />
-      
-                  <label for="Adults">Adults
-                  </label>
-                </div>
-                <div>
-                  <input type="checkbox" name="reason" value="Special Needs" id="Special Needs" />
-      
-                  <label for="Special Needs"> Special Needs
-                  </label>
-                </div>
-              </div>
-              <div class="col-6">
-                <div>
-                  <input type="checkbox" value="email" name="Workshops" id="Workshops" />
-      
-                  <label for="Workshops">Workshops
-                  </label>
-                </div>
-                <div>
-                  <input type="checkbox" name="reason" value="Jewish" id="Jewish" />
-      
-                  <label for="Jewish"> Jewish
-                  </label>
-                </div>
-                <div>
-                  <input type="checkbox" value="email" name="Facilitator" id="Facilitator" />
-      
-                  <label for="Facilitator"> Facilitator
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          
-          <div class="contact-link">
-            <button type="submit"  class="btn btn-lg btn-outline-orange form-btn">
-              Email Me
-            </button>
-          </div>
-        </form>
-
-      </div>
-    </div>
-
-    <script>
-      function sendMail() {
-        const checkBoxElements = document.querySelectorAll('input[name="reason"]');
-        let body = 'I am contacting you about:';
-        for(let i = 0; i < checkBoxElements.length; i++){
-          console.log(checkBoxElements[i]['checked'])
-            if(checkBoxElements[i]['checked']){
-              body = body.concat( ' ' +  checkBoxElements[i]['value'] + ',');
-            }
-        }
-        body = body.slice(0,-1);
-        window.open('mailto:andrea@andreakamens.us?subject=Create Your Program Form Submission&body=' + body, '_blank');
-      }
-      </script>
-    <div class="offerings-background">
-      <h3 class="offerings-heading">My Offerings:</h3>
-
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <div class="offerings-wrapper">
-              <h4 class="offerings-subheading">Kids</h4>
-              <p class="offerings-content">
-                Schools, Birthdays, Playsgroups, Camps,
-              </p>
+        <div class="form-background">
+          <img src="./images/Hire_Me_Form-09.svg" alt="" class="form-image" />
+          <p class="form-copy">
+            Hello! If you would like to hire me please send me an email and I’ll
+            get back to you as soon as I can! Tick the boxes below and in your
+            email let me know the rough timeline.
+          </p>
+
+          <form
+            id="mailForm"
+            action="javascript:sendMail()"
+            method="POST"
+            enctype="text/plain"
+          >
+            <div class="form-wrapper">
+              <h6>What would you like to contact me about?</h6>
+              <div class="row">
+                <div class="col-6">
+                  <div>
+                    <input
+                      type="checkbox"
+                      name="reason"
+                      value="Kids"
+                      id="Kids"
+                    />
+
+                    <label for="Kids"> Kids </label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      value="email"
+                      name="Adults"
+                      id="Adults"
+                    />
+
+                    <label for="Adults">Adults </label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      name="reason"
+                      value="Special Needs"
+                      id="Special Needs"
+                    />
+
+                    <label for="Special Needs"> Special Needs </label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div>
+                    <input
+                      type="checkbox"
+                      value="email"
+                      name="Workshops"
+                      id="Workshops"
+                    />
+
+                    <label for="Workshops">Workshops </label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      name="reason"
+                      value="Jewish"
+                      id="Jewish"
+                    />
+
+                    <label for="Jewish"> Jewish </label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      value="email"
+                      name="Facilitator"
+                      id="Facilitator"
+                    />
+
+                    <label for="Facilitator"> Facilitator </label>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="offerings-wrapper">
-              <h4 class="offerings-subheading">Jewish</h4>
-              <p class="offerings-content">
-                Community Groups, Jewish Holidays, Hebrew School, Synagogues
-              </p>
+            <div class="contact-link">
+              <button
+                type="submit"
+                class="btn btn-lg btn-outline-orange form-btn"
+              >
+                Email Me
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script>
+        function sendMail() {
+          const checkBoxElements = document.querySelectorAll(
+            'input[name="reason"]'
+          );
+          let body = 'I am contacting you about:';
+          for (let i = 0; i < checkBoxElements.length; i++) {
+            console.log(checkBoxElements[i]['checked']);
+            if (checkBoxElements[i]['checked']) {
+              body = body.concat(' ' + checkBoxElements[i]['value'] + ',');
+            }
+          }
+          body = body.slice(0, -1);
+          window.open(
+            'mailto:andrea@andreakamens.us?subject=Create Your Program Form Submission&body=' +
+              body,
+            '_blank'
+          );
+        }
+      </script>
+      <div class="offerings-background">
+        <h3 class="offerings-heading">My Offerings:</h3>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="offerings-wrapper">
+                <h4 class="offerings-subheading">Kids</h4>
+                <p class="offerings-content">
+                  Schools, Birthdays, Playsgroups, Camps,
+                </p>
+              </div>
+
+              <div class="offerings-wrapper">
+                <h4 class="offerings-subheading">Jewish</h4>
+                <p class="offerings-content">
+                  Community Groups, Jewish Holidays, Hebrew School, Synagogues
+                </p>
+              </div>
+
+              <div class="offerings-wrapper">
+                <h4 class="offerings-subheading">Facilitator</h4>
+
+                <p class="offerings-content">
+                  Let Andrea facilitate your next event!
+                </p>
+              </div>
             </div>
 
-            <div class="offerings-wrapper">
-              <h4 class="offerings-subheading">Facilitator</h4>
-            
-              <p class="offerings-content">Let Andrea facilitate your next event!</p>
-            </div>
-          </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="offerings-wrapper">
+                <h4 class="offerings-subheading">Adults</h4>
+                <p class="offerings-content">
+                  Book Clubs, Synagogues, Chruches, Parenting Groups, Health
+                  Centers, Dance Groups
+                </p>
+              </div>
 
-          <div class="col-sm-12 col-md-6">
-            <div class="offerings-wrapper">
-              <h4 class="offerings-subheading">Adults</h4>
-              <p class="offerings-content">
-                Book Clubs, Synagogues, Chruches, Parenting Groups, Health
-                Centers, Dance Groups
-              </p>
-            </div>
+              <div class="offerings-wrapper">
+                <h4 class="offerings-subheading">Inclusion</h4>
+                <p class="offerings-content">
+                  Groups for children or adults with disabilities or special
+                  needs
+                </p>
+              </div>
 
-            <div class="offerings-wrapper">
-              <h4 class="offerings-subheading">Inclusion</h4>
-              <p class="offerings-content">
-                Groups for children or adults with disabilities or special needs
-              </p>
-            </div>
-
-            <div class="offerings-wrapper">
-              <h4 class="offerings-subheading"> Workshops</h4>
-              <p class="offerings-content">
-                Improve your oral and written storytelling
-              </p>
+              <div class="offerings-wrapper">
+                <h4 class="offerings-subheading">Workshops</h4>
+                <p class="offerings-content">
+                  Improve your oral and written storytelling
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Swiper -->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img class="swiper-img" src="images/portrait_7.jpg" alt="" />
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="swiper-img" src="images/portrait_7.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-img" src="images/portrait_1.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-img" src="images/0-9.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-img" src="images/portrait_5.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-img" src="images/portrait_3.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-img" src="images/portrait_2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-img" src="images/0-1.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-img" src="images/0-4.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-img" src="images/0-10.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-img" src="images/portrait_4.jpg" alt="" />
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img class="swiper-img" src="images/portrait_1.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-img" src="images/0-9.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-img" src="images/portrait_5.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-img" src="images/portrait_3.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-img" src="images/portrait_2.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-img" src="images/0-1.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-img" src="images/0-4.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-img" src="images/0-10.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-img" src="images/portrait_4.jpg" alt="" />
-        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-button-prev"></div>
       </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-
-      <div class="swiper-button-next"></div>
-
-      <div class="swiper-button-prev"></div>
     </div>
 
     <!-- BACKGROUND ================================================================-->
@@ -589,7 +627,7 @@
               parents knew."
               <br />
               <br />
-              - Sadako Sasaki and the Paper Cranes. Story by Andrea Kamens. 
+              - Sadako Sasaki and the Paper Cranes. Story by Andrea Kamens.
             </p>
           </div>
         </div>
@@ -626,10 +664,12 @@
             </div>
           </div>
           <div class="modal-footer">
-            <p>"Make a thousand paper cranes, and a wish, and it will come true..."  
+            <p>
+              "Make a thousand paper cranes, and a wish, and it will come
+              true..."
               <br />
               <br />
-              - Sadako Sasaki and the Paper Cranes. Story by Andrea Kamens. 
+              - Sadako Sasaki and the Paper Cranes. Story by Andrea Kamens.
             </p>
           </div>
         </div>
