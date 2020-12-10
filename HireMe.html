@@ -98,7 +98,7 @@
       </ul>
     </header>
 
-    <div class="content">
+    <div id="content" class="content">
       <!--PAGE TITLE ====================================================================-->
 
       <section class="page-title">
@@ -801,5 +801,24 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
+          <!--BACKGROUND-->
+      
+          <script>
+            function toggleBackground(){
+                var overlay = document.querySelector('.overlay');
+                var content = document.querySelector('#content');
+                var background = document.querySelector('.background');
+                var backgroundButton = document.querySelector('.background-toggle');
+                var backgroundX = document.querySelector('.background-toggle-x');
+      
+                window.scrollTo(0,0);
+      
+                overlay.classList.toggle("hidden");
+                content.classList.toggle("invisible");
+                background.classList.toggle("front");
+                backgroundButton.classList.toggle("hidden");
+                backgroundX.classList.toggle("show");
+            }
+      </script>
   </body>
 </html>
