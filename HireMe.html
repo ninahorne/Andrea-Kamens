@@ -98,12 +98,15 @@
       </ul>
     </header>
 
-    <div id="content" class="content">
-      <!--PAGE TITLE ====================================================================-->
+    <div id="content">
+      <div class="content">
+        <!--PAGE TITLE ====================================================================-->
 
-      <section class="page-title">
-        <h2>Create Your Program</h2>
-      </section>
+        <section class="page-title">
+          <h2>Create Your Program</h2>
+        </section>
+      </div>
+
       <div class="container">
         <div class="form-background">
           <img src="./images/Hire_Me_Form-09.svg" alt="" class="form-image" />
@@ -200,6 +203,7 @@
           </form>
         </div>
       </div>
+
       <script>
         function sendMail() {
           const checkBoxElements = document.querySelectorAll(
@@ -801,24 +805,5 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
-          <!--BACKGROUND-->
-      
-          <script>
-            function toggleBackground(){
-                var overlay = document.querySelector('.overlay');
-                var content = document.querySelector('#content');
-                var background = document.querySelector('.background');
-                var backgroundButton = document.querySelector('.background-toggle');
-                var backgroundX = document.querySelector('.background-toggle-x');
-      
-                window.scrollTo(0,0);
-      
-                overlay.classList.toggle("hidden");
-                content.classList.toggle("invisible");
-                background.classList.toggle("front");
-                backgroundButton.classList.toggle("hidden");
-                backgroundX.classList.toggle("show");
-            }
-      </script>
   </body>
 </html>
