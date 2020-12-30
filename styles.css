@@ -84,7 +84,7 @@ font-family: 'Roboto', sans-serif;
   transition: all 0.5s ease;
   z-index: 10;
   background: #ce6d46;
-  width: 386px;
+  width: 410px;
   max-width: 100%;
   padding: 50px;
   padding-top: 8px;
@@ -94,7 +94,7 @@ font-family: 'Roboto', sans-serif;
   top: 0px;
   right: 0;
   padding-right: 78px;
-  padding-left: 0px;
+  padding-left: 15px;
   -webkit-box-shadow: 2px 22px 20px 14px rgba(0, 0, 0, 0.38);
   -moz-box-shadow: 2px 22px 20px 14px rgba(0, 0, 0, 0.38);
   box-shadow: 2px 22px 20px 14px rgba(0, 0, 0, 0.38);
@@ -491,6 +491,12 @@ ul {
     height: 72vh;
     top: 0;
   }
+
+  .storyteller-title{
+    font-size: 20px;
+    top: 34%;
+  }
+
   .site-title {
     font-size: 50px;
     top: 42%;
@@ -510,22 +516,17 @@ ul {
 }
 
 @media (max-width: 576px) {
-  /* .mountains .one,
-  .mountains .two,
-  .mountains .three,
-  .mountains .four,
-  .mountains .five {
-    display: none;
+ 
+
+  .storyteller-title{
+    font-size: 15px;
+    top: 22%;
   }
-  .mountains {
-    background-image: url('images/mountain_background_sm.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-  } */
+
 
   .site-title {
     font-size: 34px;
-    top: 28%;
+    top: 29%;
   }
 
   .mountain-quote {
@@ -549,7 +550,7 @@ ul {
 .home-page-quote{
   margin: 0px auto;
   padding-bottom: 200px;
-  width: 922px;
+  width: 82%;
   font-family: "argesta_displayregular";
   font-size: 20px;
 }
@@ -559,7 +560,6 @@ ul {
   text-decoration: none;
   border-radius: 10px;
   padding: 10px 20px;
-  margin-left: 300px;
   font-size: 20px;
   text-align: right;
   float: right;
@@ -715,8 +715,14 @@ ul {
 }
 
 .about-me-copy {
-  margin: 33px;
+  margin-top: 82px;
+  margin-left: 12px;
+  margin-right: 12px;
   text-align: center;
+  font-size: 18px;
+  line-height: 31px;
+  letter-spacing: 1px;
+
 }
 
 #am-copy-1 {
@@ -892,17 +898,39 @@ ul {
   font-size: 20px;
 }
 
+.offerings-link{
+  color: white;
+}
+
+.offerings-link:hover{
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  text-transform:underline white ;
+
+}
+
 .form-btn {
   position: relative;
-  background-color: transparent;
+  background-color: #97cbe8;
   border: 3px solid #ce6d46;
   padding: 5px 88px;
   width: 385px;
   margin: 0 auto;
   display: block;
   max-width: 80%;
-  color: white;
+  letter-spacing: 1px;
+  color: #ce6d46;
 }
+
+.form-btn:hover{
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  color: #2d5870;
+}
+
+
+
 
 #mailForm {
   color: white;
@@ -926,6 +954,10 @@ ul {
   width: 100%;
   object-position: center;
   object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: white;
 }
 
 @media (max-width: 1200px) {
@@ -1110,6 +1142,11 @@ ul {
 
 .learn-more-sections:hover .learn-more-item {
   color: #2d5870;
+
+}
+
+.learn-more-link:hover{
+  text-decoration: none !important;
 }
 
 .learn-more-modal-img {
@@ -1165,7 +1202,9 @@ ul {
 .cyp-btn:hover{
   border: 3px solid #367899;
   color: #367899;
-  text-decoration: none !important;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
 
 }
 
@@ -1265,7 +1304,23 @@ ul {
   background-color: white;
   border: 2px solid #ce6d46;
   padding-top:30px;
+  color: #000;
 } 
+
+.ongoing-sections{
+  position: relative;
+  margin: 20px 10px;
+  border-radius: 36px;
+  background-color: white;
+  border: 2px solid #367899;
+  padding-top:30px;
+  color: black;
+
+}
+
+.ongoing-sections:hover{
+  text-decoration: none;
+}
 
 #ongoing-affiliations{
   padding-top: 50px;
@@ -1276,15 +1331,21 @@ ul {
   font-size: 1.5rem;
   padding-top: 20px;
   text-align: left;
-  padding-left: 40px;
+  padding-left: 5%;
+    padding-right: 5%;
   display: flex;
     align-items: center;
+    color: #000;
+}
+
+.press-link:hover{
+  text-decoration: underline black;
 }
 
 .press-item::before{
   content:"";
   display: inline-block;
-  width: 115px;
+  width: 15%;
   height: 45px;
   background-image: url("images/rock_illustrations-05.svg");
   background-size: contain;
@@ -1296,18 +1357,21 @@ ul {
 .press-copy {
   padding: 20px 40px;
   text-align: left;
-  margin-left: 128px;
-  margin-right: 35px;
+  margin-left: 15%;
+  margin-right: 10%;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 32px;
 }
 
 
 .press-page-quote{
   margin: 0 auto;
-  width: 631px;
+  width: 80%;
   padding: 56px;
   text-shadow: 1px 1px 14px rgba(79, 144, 191, .75);
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-style: italic;
 }
 
@@ -1324,6 +1388,17 @@ ul {
 }
 
 /*VIDEOS*/
+
+.video-page-quote{
+  margin: 0px auto;
+  padding-bottom: 100px;
+  width: 65%;
+  text-align: center;
+  font-family: "argesta_displayregular";
+  font-size: 20px;
+  text-shadow: 1px 1px 14px rgba(79, 144, 191, .75);
+
+}
 
 .video {
   /* position: absolute; */
