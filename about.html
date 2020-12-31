@@ -3,20 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>About Andrea Kamens | Storyteller - Zoom, Virtual Storytelling, based in Boston, MA</title>
+    <meta
+    name="description"
+    content="
+  About Andrea Kamens. Andrea Kamens is a storyteller based in Boston, MA. She offers performances and workshops for
+  children, adults, special needs groups, as well as Jewish storytelling.
+  "
+  />    <link rel="shortcut icon" type="image/jpg" href="images/favicon@2x.png"/>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -30,11 +29,12 @@
     />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="HireMe.js"></script>
+    <script src="scripts.js"></script>
   </head>
   <body>
     <!--HEADER ==========================================================================-->
@@ -67,15 +67,15 @@
         </li>
 
         <li class="menu-item">
-          <a class="menu-link" href="AboutMe.html"> About Andrea</a>
+          <a class="menu-link" href="about.html"> About Andrea</a>
         </li>
 
         <li class="menu-item">
-          <a class="menu-link" href="LearnMore.html"> Offerings & Audiences</a>
+          <a class="menu-link" href="offeringsandaudiences.html"> Offerings & Audiences</a>
         </li>
 
         <li class="menu-item">
-          <a class="menu-link" href="HireMe.html"> Create Your Program </a>
+          <a class="menu-link" href="createyourprogram.html"> Create Your Program </a>
         </li>
 
         <li class="menu-item">
@@ -87,7 +87,7 @@
         </li>
 
         <li class="menu-item">
-          <a class="menu-link" href="Press.html"> Recent Work</a>
+          <a class="menu-link" href="recentwork.html"> Recent Work</a>
         </li>
 
         <li class="menu-item">
@@ -98,173 +98,85 @@
       </ul>
     </header>
 
-    <div id="content">
-      <div class="content">
-        <!--PAGE TITLE ====================================================================-->
+    <div id="content" class="content">
+      <!--PAGE TITLE ====================================================================-->
 
-        <section class="page-title">
-          <h2>Create Your Program</h2>
-        </section>
+      <section class="page-title">
+        <h1>About Andrea</h1>
+      </section>
+
+      <!-- PAGE CONTENT  ==========================================================================-->
+      <div class="container">
+        <p class="about-page-quote">
+          “Storytelling is gathering pieces of ourselves back to one piece.”
+          <br />
+          <span style="font-style: italic; font-size: 14px"
+            >- Rosalie Zerrudo, Hilway Art Products, Philippines</span
+          >
+        </p>
       </div>
 
-      <div class="container">
-        <div class="form-background">
-          <p class="form-copy">
-            To begin creating your program please send me an email! 
-            <br>
-            <br>
-            If you're having trouble please refer to the <a href="LearnMore.html" class="href offerings-link"> Offeringe & Audiences</a> page to get some inspiration!
-          </p>
+      <div class="about-wrapper">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="about-me-copy" id="am-copy-1">
+                  I love a good troll story. I love going deep into the forest
+                  with witches and wolves. I love making new magic from the old.
+                </p>
+              </div>
+              <div class="col-sm-12">
+                <p style="margin-top: 20px;" class="about-me-copy">There is no such thing as too cold for the beach.</p>
+              </div>
+              <div class="col-sm-12">
+                <p class="about-me-copy" id="am-copy-2">
+                  Based in Boston MA, and virtually available worldwide
+                </p>
+              </div>
 
-          <form
-            id="mailForm"
-            action="javascript:sendMail()"
-            method="POST"
-            enctype="text/plain"
-          >
-            <div class="form-wrapper">
-              <h6>What would you like to contact me about?</h6>
-              <div class="row">
-                <div class="col-6">
-                  <div>
-                    <input
-                      type="checkbox"
-                      name="reason"
-                      value="Kids"
-                      id="Kids"
-                    />
-
-                    <label for="Kids"> Kids </label>
-                  </div>
-                  <div>
-                    <input
-                      type="checkbox"
-                      value="email"
-                      name="Adults"
-                      id="Adults"
-                    />
-
-                    <label for="Adults">Adults </label>
-                  </div>
-                  <div>
-                    <input
-                      type="checkbox"
-                      name="reason"
-                      value="Special Needs"
-                      id="Special Needs"
-                    />
-
-                    <label for="Special Needs"> Special Needs </label>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div>
-                    <input
-                      type="checkbox"
-                      value="email"
-                      name="Workshops"
-                      id="Workshops"
-                    />
-
-                    <label for="Workshops">Workshops </label>
-                  </div>
-                  <div>
-                    <input
-                      type="checkbox"
-                      name="reason"
-                      value="Jewish"
-                      id="Jewish"
-                    />
-
-                    <label for="Jewish"> Jewish </label>
-                  </div>
-                  <div>
-                    <input
-                      type="checkbox"
-                      value="email"
-                      name="Facilitator"
-                      id="Facilitator"
-                    />
-
-                    <label for="Facilitator"> Facilitator </label>
-                  </div>
-                </div>
+              <div class="col-sm-12">
+                <p class="about-me-copy" id="am-copy-3">
+                  My sister has developmental disabilities and she and I have
+                  been storytelling with each other since she was first learning
+                  to speak. I have the skills to create inclusive experiences
+                  that meet all listeners where they are, allowing them to be
+                  their full selves.
+                </p>
               </div>
             </div>
+          </div>
 
-            <div class="contact-link">
-              <button
-                type="submit"
-                class="btn btn-lg btn-outline-orange form-btn"
-              >
-                Email Me
-              </button>
+          <div class="col-lg-4 col-sm-6">
+            <img class="andrea-portrait" src="images/AK_portrait-06.svg" alt="Portrait of Andrea Kamens, storyteller - Boston, MA" />
+          </div>
+
+          <div class="col-lg-4 col-sm-12">
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="about-me-copy" id="am-copy-4">
+                  An arts specialist, writer, teacher, community volunteer, and
+                  mom of five (plus two cats, and a crested gecko)
+                </p>
+              </div>
+              <div class="col-sm-12">
+                <p class="about-me-copy" id="am-copy-5">
+                  The stories we listen to matter, the way the people we listen
+                  to matter. I seek out and create diverse stories, so the “one”
+                  in the room can shout out, “That’s me!”
+                </p>
+              </div>
+
+              <div class="col-sm-12">
+                <p class="about-me-copy" id="am-copy-6">
+                  “With Andrea’s sophistication level, it's a good thing she’s
+                  on the side of good”
+                  <br />- Bruce Marcus, The Story Space
+                </p>
+              </div>
             </div>
-          </form>
-        </div>
-      </div>
-
-      <script>
-        function sendMail() {
-          const checkBoxElements = document.querySelectorAll(
-            'input[name="reason"]'
-          );
-          let body = 'I am contacting you about:';
-          for (let i = 0; i < checkBoxElements.length; i++) {
-            console.log(checkBoxElements[i]['checked']);
-            if (checkBoxElements[i]['checked']) {
-              body = body.concat(' ' + checkBoxElements[i]['value'] + ',');
-            }
-          }
-          body = body.slice(0, -1);
-          window.open(
-            'mailto:andrea@andreakamens.us?subject=Create Your Program Form Submission&body=' +
-              body,
-            '_blank'
-          );
-        }
-      </script>
-
-      <!-- Swiper -->
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img class="swiper-img" src="images/portrait_7.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img class="swiper-img" src="images/portrait_1.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img class="swiper-img" src="images/0-9.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img class="swiper-img" src="images/portrait_5.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img class="swiper-img" src="images/portrait_3.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img class="swiper-img" src="images/portrait_2.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img class="swiper-img" src="images/0-1.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img class="swiper-img" src="images/0-4.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img class="swiper-img" src="images/0-10.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img class="swiper-img" src="images/portrait_4.jpg" alt="" />
           </div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-
-        <div class="swiper-button-next"></div>
-
-        <div class="swiper-button-prev"></div>
       </div>
     </div>
 
@@ -291,7 +203,7 @@
         >
           <img
             src="./images/Kimono.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Kimono Illustration"
           />
         </div>
         <div
@@ -302,7 +214,7 @@
         >
           <img
             src="./images/Paper_Crane.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Paper Crane Illustration"
           />
         </div>
         <div
@@ -313,7 +225,7 @@
         >
           <img
             src="./images/Two_Girls.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Two Girls Illustration"
           />
         </div>
         <div
@@ -324,7 +236,7 @@
         >
           <img
             src="./images/Sun.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Sun Illustration"
           />
         </div>
         <div
@@ -335,7 +247,7 @@
         >
           <img
             src="./images/Two_Girls.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Two Girls Illustration"
           />
         </div>
         <div
@@ -346,7 +258,7 @@
         >
           <img
             src="./images/Paper_Crane.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Paper Crane Illustration"
           />
         </div>
         <div
@@ -357,7 +269,7 @@
         >
           <img
             src="./images/Sun.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Sun Illustration"
           />
         </div>
         <div
@@ -379,7 +291,7 @@
         >
           <img
             src="./images/Kimono.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Kimono Illustration"
           />
         </div>
       </div>
@@ -404,7 +316,7 @@
         >
           <img
             src="./images/Kimono.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Kimono Illustration"
           />
         </div>
         <div
@@ -415,7 +327,7 @@
         >
           <img
             src="./images/Paper_Crane.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Paper Crane Illustration"
           />
         </div>
         <div
@@ -426,7 +338,7 @@
         >
           <img
             src="./images/Two_Girls.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Two Girls Illustration"
           />
         </div>
         <div
@@ -437,7 +349,7 @@
         >
           <img
             src="./images/Sun.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Sun Illustration"
           />
         </div>
         <div
@@ -448,7 +360,7 @@
         >
           <img
             src="./images/Two_Girls.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Two Girls Illustration"
           />
         </div>
         <div
@@ -459,7 +371,7 @@
         >
           <img
             src="./images/Paper_Crane.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Paper Crane Illustration"
           />
         </div>
         <div
@@ -470,7 +382,7 @@
         >
           <img
             src="./images/Sun.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Sun Illustration"
           />
         </div>
         <div
@@ -492,7 +404,7 @@
         >
           <img
             src="./images/Kimono.png"
-            alt="Andrea Kamens - StoryTeller - Crane and Branches Illustration"
+            alt="Andrea Kamens - StoryTeller - Kimono Illustration"
           />
         </div>
       </div>
@@ -524,7 +436,7 @@
           </div>
           <div class="modal-body">
             <div class="modal-image">
-              <img src="./images/Crane_and_Branches_Original.jpg" alt="" />
+              <img src="./images/Crane_and_Branches_Original.jpg" alt="Andrea Kamens, storyteller - Crane and Branches Illustration" />
             </div>
           </div>
 
@@ -540,7 +452,7 @@
       </div>
     </div>
 
-    <!--Kimono Modal -->
+    <!--Kimono"Modal -->
     <div
       class="modal fade"
       id="kimonoModal"
@@ -553,7 +465,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLongTitle">
-              Kimono by Bayla Kamens
+              Kimono"by Bayla Kamens
             </h5>
             <button
               type="button"
@@ -566,12 +478,13 @@
           </div>
           <div class="modal-body">
             <div class="modal-image">
-              <img src="./images/Kimono_Original.jpg" alt="" />
+              <img src="./images/Kimono_Original.jpg" alt="Andrea Kamens storyteller - Kimono Illustration" />
+
             </div>
           </div>
           <div class="modal-footer">
             <p>
-              "A kimono was normally not for a child as young as 12, but her
+              "A Kimono"was normally not for a child as young as 12, but her
               parents knew."
               <br />
               <br />
@@ -608,7 +521,7 @@
           </div>
           <div class="modal-body">
             <div class="modal-image">
-              <img src="./images/Crane_Original.jpg" alt="" />
+              <img src="./images/Crane_Original.jpg" alt="Andrea Kamens storyteller - Paper Crane Illustration" />
             </div>
           </div>
           <div class="modal-footer">
@@ -649,7 +562,7 @@
           </div>
           <div class="modal-body">
             <div class="modal-image">
-              <img src="./images/Two_Girls_Original.png" alt="" />
+              <img src="./images/Two_Girls_Original.png" alt="Andrea Kamens storyteller - Two Girls Illustration" />
             </div>
           </div>
           <div class="modal-footer">
@@ -694,7 +607,7 @@
           </div>
           <div class="modal-body">
             <div class="modal-image">
-              <img src="./images/Sun_Original.png" alt="" />
+              <img src="./images/Sun_Original.png" alt="Andrea Kamens storyteller - Sun Illustration" />
             </div>
           </div>
           <div class="modal-footer">
@@ -730,7 +643,7 @@
     <!-- FOOTER ==========================================================================-->
 
     <footer>
-      <img class="footer-img" src="images/rock_illustrations-04.svg" />
+      <img class="footer-img" src="images/rock_illustrations-04.svg" alt="Rock illustration - Andrea Kamens, storyteller" />
     </footer>
 
     <!-- SCRIPTS   -->
@@ -749,5 +662,26 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--BACKGROUND-->
+
+    <script>
+      function toggleBackground() {
+        var overlay = document.querySelector('.overlay');
+        var content = document.querySelector('#content');
+        var background = document.querySelector('.background');
+        var backgroundButton = document.querySelector('.background-toggle');
+        var backgroundX = document.querySelector('.background-toggle-x');
+
+        window.scrollTo(0, 0);
+
+        overlay.classList.toggle('hidden');
+        content.classList.toggle('invisible');
+        background.classList.toggle('front');
+        backgroundButton.classList.toggle('hidden');
+        backgroundX.classList.toggle('show');
+      }
+    </script>
   </body>
 </html>
