@@ -714,6 +714,7 @@ ul {
 .about-page-quote {
   margin: 0 auto;
   width: 631px;
+  max-width: 100%;
   padding: 56px;
   text-shadow: 1px 1px 14px rgba(79, 144, 191, 0.75);
   text-align: center;
@@ -722,6 +723,8 @@ ul {
 
 .about-wrapper {
   padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .andrea-portrait {
   /* position: relative;
@@ -732,7 +735,7 @@ ul {
   /* margin-bottom: 200px; */
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -886,14 +889,19 @@ ul {
 
 .form-background {
   position: relative;
-  /* background-image: url(./images/Hire_Me_Form-09.png); */
-  /* background-position: bottom;
+  background-image: url(./images/Hire_Me_Form-09.svg);
+  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; */
-  margin: 50px 208px;
-  padding-top: 22px;
-  margin-bottom: 200px;
+  background-repeat: no-repeat;
+  margin: 50px auto;
+  /* padding-top: 22px;
+  margin-bottom: 200px; */
   height: 100%;
+  width: 80%;
+  border-radius: 36px;
+  -webkit-box-shadow: -23px 18px 18px -4px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: -23px 18px 18px -4px rgba(0, 0, 0, 0.38);
+  box-shadow: -23px 18px 18px -4px rgba(0, 0, 0, 0.38);
 }
 .form-image {
   position: absolute;
@@ -911,10 +919,13 @@ ul {
 .form-copy {
   position: relative;
   text-align: center;
-  padding-left: 21%;
+  width: 75%;
+  margin: 0 auto;
+  padding: 50px 0px;
+  /* padding-left: 21%;
   padding-right: 20%;
   padding-bottom: 25%;
-  padding-top: 10%;
+  padding-top: 10%; */
   color: white;
   font-size: 20px;
 }
@@ -934,13 +945,17 @@ ul {
   position: relative;
   background-color: #97cbe8;
   border: 3px solid #ce6d46;
-  padding: 5px 88px;
+  padding: 5px 0px;
   width: 385px;
   margin: 0 auto;
   display: block;
   max-width: 80%;
   letter-spacing: 1px;
   color: #ce6d46;
+}
+
+.contact-link{
+  padding: 20px 0px;
 }
 
 .form-btn:hover {
@@ -953,9 +968,9 @@ ul {
   color: white;
 }
 #mailForm .form-wrapper {
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  width: 385px;
+  max-width: 80%;
+  margin: 40px auto;
 }
 
 .swiper-container {
@@ -978,42 +993,42 @@ ul {
 }
 
 @media (max-width: 1200px) {
-  .form-background {
+  /* .form-background {
     margin: 50px 112px;
-  }
+  } */
 
-  .form-copy {
+  /* .form-copy {
     padding-left: 17%;
     padding-right: 17%;
     padding-bottom: 27%;
     padding-top: 10%;
-  }
+  } */
 }
 @media (max-width: 992px) {
-  .form-copy {
+  /* .form-copy {
     padding-left: 12%;
     padding-right: 12%;
     padding-bottom: 21%;
     padding-top: 5%;
-  }
-  .form-background {
+  } */
+  /* .form-background {
     margin: 50px 63px;
-  }
+  } */
 
   .swiper-container {
     height: 300px;
   }
 }
 @media (max-width: 767px) {
-  .form-background {
+  /* .form-background {
     margin: 37px 2px;
-  }
-  .form-copy {
+  } */
+  /* .form-copy {
     padding-left: 15%;
     padding-right: 15%;
     padding-bottom: 17%;
     padding-top: 4%;
-  }
+  } */
 
   /* .form-btn {
     bottom: 85px;
@@ -1022,9 +1037,9 @@ ul {
   #mailForm .form-wrapper {
     width: 75%;
   }
-  .form-btn {
+  /* .form-btn {
     margin-top: -20px;
-  }
+  } */
 
   .swiper-container {
     width: 100vw;
@@ -1046,13 +1061,13 @@ ul {
   }
 }
 @media (max-width: 576px) {
-  .form-copy {
+  /* .form-copy {
     padding-left: 12%;
     padding-right: 12%;
     padding-bottom: 26%;
     padding-top: 7%;
     font-size: 17px;
-  }
+  } */
   #mailForm .form-wrapper {
     width: 75%;
     font-size: 15px;
@@ -1061,7 +1076,7 @@ ul {
   .form-btn {
     /* bottom: -31px; */
     font-size: 15px;
-    margin-top: -30px;
+    /* margin-top: -30px; */
     /* background-color: white; */
   }
 
@@ -1074,24 +1089,24 @@ ul {
 }
 
 @media (max-width: 520px) {
-  .form-copy {
+  /* .form-copy {
     padding-bottom: 2%;
     font-size: 14px;
-  }
+  } */
 }
 
 @media (max-width: 414px) {
   .form-copy {
-    padding-left: 14%;
+    /* padding-left: 14%;
     padding-right: 14%;
     padding-bottom: 20%;
-    padding-top: 2%;
-    font-size: 12px;
+    padding-top: 2%; */
+    font-size: 16px;
   }
-  .form-btn {
+  /* .form-btn {
     padding: 5px 20px;
     margin-top: 80px;
-  }
+  } */
   .form-wrapper {
     display: none;
   }
