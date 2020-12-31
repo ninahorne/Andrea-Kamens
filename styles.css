@@ -1403,6 +1403,9 @@ ul {
 @media (max-width: 768px) {
 }
 @media (max-width: 576px) {
+  .press-copy{
+    padding: 20px 0px;
+  }
 }
 
 /*VIDEOS*/
