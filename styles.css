@@ -45,6 +45,18 @@ h2 {
 .content.back {
   z-index: -3;
 }
+#eventLink{
+  color: black;
+}
+#eventLink:hover{
+  color: var(--ak-orange);
+  text-decoration: none;
+}
+
+#event_modal #description{
+  text-transform: none;
+  text-align: left;
+}
 
 @media (max-width: 1200px) {
 }
