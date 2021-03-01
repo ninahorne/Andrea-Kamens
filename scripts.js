@@ -116,3 +116,7 @@ function navigateToCampSignUp(){
   const campURL = 'https://www.artistsstandingstrongtogether.net/yssc-summer2021';
   window.open(campURL, '_blank');
 }
+function navigateToRadioClip() {
+  const radioClip = 'https://www.mixcloud.com/EastLondonRadio/talking-stories-48/';
+  window.open(radioClip, '_blank');
+}
