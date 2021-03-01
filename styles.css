@@ -1999,13 +1999,12 @@ iframe {
 
   }
   #announcementBanner .announcement-banner-subtitle{
-
     font-size: 13px;
-    background-color: transparent;
-    width: auto;
-    bottom: -63px;
+    background-color: white;
+    width: 100%;
+    bottom: -100px;
     text-align: center;
-
+    left: 3px;
   }
 }
 
