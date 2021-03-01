@@ -100,13 +100,19 @@ document.addEventListener('DOMContentLoaded', function () {
       mountains.style.height = '47vh';
       mountains.style.top = '0';
     }
-    if (mountainWrapper && screenWidth < 576) {
-      mountainWrapper.style.height = '47vh';
-      mountainWrapper.style.minHeight = '0';
-      siteTitle.style.top = '38%';
-      arrow.style.display = 'none';
-      scrollDown.style.display = 'none';
-      mountainQuote.style.top = '47%';
-    }
+    // if (mountainWrapper && screenWidth < 576) {
+    //   mountainWrapper.style.height = '47vh';
+    //   mountainWrapper.style.minHeight = '0';
+    //   siteTitle.style.top = '38%';
+    //   arrow.style.display = 'none';
+    //   scrollDown.style.display = 'none';
+    //   // mountainQuote.style.top = '47%';
+    // }
   }
 });
+
+
+function navigateToCampSignUp(){
+  const campURL = 'https://www.artistsstandingstrongtogether.net/yssc-summer2021';
+  window.open(campURL, '_blank');
+}
