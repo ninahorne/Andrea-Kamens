@@ -1826,8 +1826,9 @@ iframe {
   .background {
     background-image: url(images/background_sm.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     opacity: 0.3;
+    bottom: 0;
   }
 
   .background-toggle-wrapper {
@@ -1917,16 +1918,26 @@ iframe {
   top: 17px;
 } */
 
+#announcementBanner .announcement-banner-button-wrapper {
+  margin-top: 80px;
+}
+
+@media (max-width: 992px){
+  #announcementBanner .announcement-banner-button-wrapper {
+    margin-top: 10px;
+  }
+}
+
 #announcementBanner .announcement-banner-button {
   background-color: transparent;
   border: solid 4px #052238;
   border-radius: 10px;
   font-weight: 600;
   padding: 0px 15px;
-  margin: 0 auto;
+  margin: 10px auto;
   display: block;
   max-width: 100%;
-  width: 500px;
+  width: 300px;
 
   color: #052238;
 }
