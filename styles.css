@@ -1888,7 +1888,7 @@ iframe {
 }
 #announcementBanner h3 {
   background-color: white;
-  width: 410px;
+  width: 145px;
   position: absolute;
   top: -31px;
   padding: 10px;
@@ -1922,11 +1922,11 @@ iframe {
   border: solid 4px #052238;
   border-radius: 10px;
   font-weight: 600;
-  padding: 0px 15px;
+  padding: 5px 15px;
   margin: 0 auto;
   display: block;
   max-width: 100%;
-  width: 500px;
+  width: 250px;
 
   color: #052238;
 }
@@ -2008,3 +2008,19 @@ iframe {
   }
 }
 
+
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.flex-bottom{
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  height: 100%;
+  flex-direction: column;
+}

@@ -111,12 +111,22 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-
-function navigateToCampSignUp(){
-  const campURL = 'https://www.artistsstandingstrongtogether.net/yssc-summer2021';
+function navigateToGetTickets() {
+  const url = 'https://www.eventcombo.com/e/stories-in-living-color-42864';
+  window.open(url, '_blank');
+}
+function navigateToRegistrationLink() {
+  const url =
+    'https://us02web.zoom.us/meeting/register/tZYvdOyuqT4pGtwurtu97aI3I6l-czW5mUyf';
+  window.open(url, '_blank');
+}
+function navigateToCampSignUp() {
+  const campURL =
+    'https://www.artistsstandingstrongtogether.net/yssc-summer2021';
   window.open(campURL, '_blank');
 }
 function navigateToRadioClip() {
-  const radioClip = 'https://www.mixcloud.com/EastLondonRadio/talking-stories-48/';
+  const radioClip =
+    'https://www.mixcloud.com/EastLondonRadio/talking-stories-48/';
   window.open(radioClip, '_blank');
 }
