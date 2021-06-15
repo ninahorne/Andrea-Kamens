@@ -111,6 +111,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+function navigateToYSSMoreInfo() {
+  const url = 'https://www.artistsstandingstrongtogether.net/yssc-summer2021';
+  window.open(url, '_blank');
+}
+
 function openYSSPdf() {
   const url = './images/mentors 2021.pdf';
   window.open(url, '_blank');
