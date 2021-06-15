@@ -111,11 +111,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+function openYSSPdf() {
+  const url = './images/mentors 2021.pdf';
+  window.open(url, '_blank');
+}
 function navigateToGetTickets() {
   const url = 'https://www.eventcombo.com/e/stories-in-living-color-42864';
   window.open(url, '_blank');
 }
-function navigateToRegistrationLink() {
+function nagivateToRegistrationLink() {
   const url =
     'https://us02web.zoom.us/meeting/register/tZYvdOyuqT4pGtwurtu97aI3I6l-czW5mUyf';
   window.open(url, '_blank');

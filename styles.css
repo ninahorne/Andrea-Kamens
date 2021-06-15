@@ -707,6 +707,9 @@ ul {
 @media (max-width: 768px) {
 }
 @media (max-width: 576px) {
+  .page-title h1{
+    font-size: 2rem;
+  }
 }
 
 /*ABOUT ME PAGE*/
@@ -2006,6 +2009,9 @@ iframe {
     text-align: center;
     left: 3px;
   }
+  #announcementBanner .announcement-banner-button {
+    margin: 20px auto;
+  }
 }
 
 
@@ -2023,4 +2029,19 @@ iframe {
   justify-content: flex-end;
   height: 100%;
   flex-direction: column;
+}
+
+.list{
+  padding: 20px;
+}
+
+.list li{
+  text-align: left;
+  text-transform: none;
+  list-style: circle;
+  margin: 10px 0px;
+}
+
+.bold{
+  font-weight: 500;
 }
