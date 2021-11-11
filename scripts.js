@@ -126,7 +126,7 @@ function navigateToGetTickets() {
 }
 function nagivateToRegistrationLink() {
   const url =
-    'https://us02web.zoom.us/meeting/register/tZYvdOyuqT4pGtwurtu97aI3I6l-czW5mUyf';
+    'https://us02web.zoom.us/meeting/register/tZAvd-igqTktEtwZhvWWcJrH6V2BnoRvEUef';
   window.open(url, '_blank');
 }
 function navigateToCampSignUp() {
