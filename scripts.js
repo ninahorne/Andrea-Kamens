@@ -121,7 +121,7 @@ function openYSSPdf() {
   window.open(url, '_blank');
 }
 function navigateToGetTickets() {
-  const url = 'https://www.eventcombo.com/e/stories-in-living-color-42864';
+  const url = 'https://us02web.zoom.us/j/84817669400?pwd=VElZOWNUWGdLTytJeWY2UXVpUXZ5QT09';
   window.open(url, '_blank');
 }
 function nagivateToRegistrationLink() {
