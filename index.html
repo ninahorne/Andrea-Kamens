@@ -62,9 +62,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'G-9RXG0J93ED');
+      gtag("config", "G-9RXG0J93ED");
     </script>
   </head>
 
@@ -198,6 +198,8 @@
                   <li class="announcement-banner-list-item">
                     Saturday, November 13
                   </li>
+                  <li class="announcement-banner-list-item">Schools</li>
+                  <li class="announcement-banner-list-item">Senior centers</li>
                   <li class="announcement-banner-list-item">
                     10 pm to 12 midnight EST
                   </li>
@@ -212,9 +214,10 @@
               </div>
               <div class="col-md-6">
                 <div class="flex-center">
-                  <button
-                    onclick="nagivateToRegistrationLink()"
+                  <a
+                    href="mailto:andrea@andreakamens.com"
                     class="announcement-banner-button"
+                    style="text-align: center"
                   >
                     Register now
                   </button>
@@ -831,21 +834,21 @@
     <!--BACKGROUND-->
     <script>
       function toggleBackground() {
-        var overlay = document.querySelector('.overlay');
-        var content = document.querySelector('#content');
-        var background = document.querySelector('.background');
-        var backgroundButton = document.querySelector('.background-toggle');
-        var backgroundX = document.querySelector('.background-toggle-x');
-        var mountainQuote = document.querySelector('#mountain-quote');
+        var overlay = document.querySelector(".overlay");
+        var content = document.querySelector("#content");
+        var background = document.querySelector(".background");
+        var backgroundButton = document.querySelector(".background-toggle");
+        var backgroundX = document.querySelector(".background-toggle-x");
+        var mountainQuote = document.querySelector("#mountain-quote");
 
         window.scrollTo(0, 0);
 
-        overlay.classList.toggle('hidden');
-        content.classList.toggle('invisible');
-        background.classList.toggle('front');
-        backgroundButton.classList.toggle('hidden');
-        backgroundX.classList.toggle('show');
-        mountainQuote.classList.toggle('zoom');
+        overlay.classList.toggle("hidden");
+        content.classList.toggle("invisible");
+        background.classList.toggle("front");
+        backgroundButton.classList.toggle("hidden");
+        backgroundX.classList.toggle("show");
+        mountainQuote.classList.toggle("zoom");
       }
     </script>
   </body>
