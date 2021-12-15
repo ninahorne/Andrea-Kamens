@@ -117,7 +117,7 @@ function navigateToYSSMoreInfo2() {
 }
 
 function openYSSPdf() {
-  const url = "./images/mentors 2021.pdf";
+  const url = "./images/png_20211210_183247_0000.png";
   window.open(url, "_blank");
 }
 function navigateToGetTickets() {
