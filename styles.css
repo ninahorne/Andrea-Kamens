@@ -2050,6 +2050,7 @@ a:hover {
 .text__row {
   display: flex;
   align-items: center;
+  margin: 1rem 0;
 }
 
 .text__row > * {
@@ -2069,11 +2070,7 @@ a:hover {
 .yss-button:hover {
   transform: scale(1.2);
 }
-@media screen and (max-width: 992px) {
-  .text__row {
-    margin: 1rem 0;
-  }
-}
+
 
 @media screen and (max-width: 567px) {
   .text__row {
