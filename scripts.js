@@ -142,7 +142,7 @@ function navigateToRadioClip() {
 }
 
 function navigateToAfterDinnerStories() {
-  const link = "https://www.artidea.org/virtual-stage";
+  const link = "https://www.artidea.org/blog/2021/12/4706";
   window.open(link, "_blank");
 }
 
