@@ -150,3 +150,11 @@ function navigateToYSST() {
   const link = "https://www.artistsstandingstrongtogether.net/yssc-winter-break-2021";
   window.open(link, "_blank");
 }
+function navigateToBadyHouse() {
+  const link = "";
+  window.open(link, "_blank");
+}
+function navigateToStorySpacePage() {
+  const link = "./storyspace.html";
+  window.open(link, "_blank");
+}
