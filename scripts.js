@@ -155,7 +155,7 @@ function navigateToBadyHouse() {
   window.open(link, "_blank");
 }
 function navigateToStorySpacePage() {
-  const link = "./storyspace.html";
+  const link = "./StorySpace.html";
   window.open(link, "_blank");
 }
 
