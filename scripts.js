@@ -158,3 +158,8 @@ function navigateToStorySpacePage() {
   const link = "./storyspace.html";
   window.open(link, "_blank");
 }
+
+function nativgateToCampRegistrationPage(){
+  const link = 'https://www.artistsstandingstrongtogether.net/yssc-summer-2022'
+  window.open(link, '_blank');
+}
