@@ -1927,7 +1927,7 @@ iframe {
   border-radius: 10px;
   font-weight: 600;
   padding: 5px 15px;
-  margin: 0 auto;
+  margin: 1rem auto 3rem;
   display: block;
   max-width: 100%;
   width: 250px;

@@ -117,7 +117,7 @@ function navigateToYSSMoreInfo2() {
 }
 
 function openYSSPdf() {
-  const url = "./images/png_20211210_183247_0000.png";
+  const url = "./images/ysst-flyer.pdf";
   window.open(url, "_blank");
 }
 function navigateToGetTickets() {
@@ -127,7 +127,7 @@ function navigateToGetTickets() {
 }
 function nagivateToRegistrationLink() {
   const url =
-    "https://us02web.zoom.us/meeting/register/tZAvd-igqTktEtwZhvWWcJrH6V2BnoRvEUef";
+    "https://us02web.zoom.us/meeting/register/tZAuc-CgqjouH9bomb9X7RcylrDsPj_Z_cxe";
   window.open(url, "_blank");
 }
 function navigateToCampSignUp() {
@@ -143,6 +143,11 @@ function navigateToRadioClip() {
 
 function navigateToAfterDinnerStories() {
   const link = "https://www.artidea.org/blog/2021/12/4706";
+  window.open(link, "_blank");
+}
+
+function linkToTickets(){
+  const link = 'https://www.bettersaidthandone.com/2022/04/01/spectacle-stories/';
   window.open(link, "_blank");
 }
 
