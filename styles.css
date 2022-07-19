@@ -2086,3 +2086,62 @@ a:hover {
 .cursor-pointer:hover {
   cursor: pointer;
 }
+
+.alert {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.camp-details{
+  margin: 4rem 0;
+}
+.camp-row{
+  position: relative;
+  padding-left: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  align-items: center;
+  width: 100%;
+
+}
+
+
+.camp-row .yss-button{
+  margin: 1rem auto;
+  width: 222px;
+}
+
+.camp-row p {
+  margin: 0;
+  padding: 0;
+}
+
+.camp-row:before{
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: black;
+  border-radius: 100%;
+  position: absolute;
+  left: 2rem;
+}
+@media screen and (max-width: 767px){
+  .camp-row{
+    grid-template-columns: 1fr;
+    padding-left: 2rem;
+    margin: 1rem 0;
+  }
+  .camp-row:before{
+    display: none;
+  }
+  .camp-row .yss-button{
+    margin: 0rem auto 1rem;
+  }
+  .camp-row .text-left {
+    text-align: center !important;
+  }
+}
