@@ -2145,3 +2145,8 @@ a:hover {
     text-align: center !important;
   }
 }
+
+.small-box{
+  max-width: 500px;
+  margin: 2rem auto;
+}
