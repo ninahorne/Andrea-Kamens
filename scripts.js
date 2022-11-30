@@ -117,7 +117,7 @@ function navigateToYSSMoreInfo2() {
 }
 
 function openYSSPdf() {
-  const url = "./images/ysst-flyer.pdf";
+  const url = "./images/ysst-flyer-3.pdf";
   window.open(url, "_blank");
 }
 function navigateToGetTickets() {
